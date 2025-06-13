@@ -18,9 +18,13 @@ func main()  {
 	for _, v := range arr {
 		go func(n int) {
 			ch <- getSquare(n)
-			}(v)
-			sum += <- ch
-		}
+		}(v)
+		//sum += <- ch
+	}
+
+	for i := 0; i < len(arr); i++ {
+		sum += <- ch
+	}
 		
 	// go getSum(&sum, ch)
 
