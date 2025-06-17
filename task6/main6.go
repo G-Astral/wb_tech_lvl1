@@ -8,7 +8,7 @@ import (
 )
 
 func main6() {
-	fmt.Println("\nЧерез рантайм го экзит:")
+	fmt.Println("\nСигналы os.Interrupt — для graceful shutdown:")
 
 	fmt.Println("Способ завершился.")
 }

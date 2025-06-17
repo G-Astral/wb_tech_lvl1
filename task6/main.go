@@ -8,22 +8,6 @@ import (
 	"sync"
 )
 
-func addText(n int) string {
-	return fmt.Sprintf("ЗДЕСЬ РАБОТАЕТ ГОРУТИНА НОМЕР: %d", n)
-}
-
-func worker(jobs chan int, result chan string, done chan struct{}, wg *sync.WaitGroup) {
-	defer wg.Done()
-	for {
-		select {
-		case job := <-jobs:
-			result <- addText(job)
-		case <-done:
-			return
-		}
-	}
-}
-
 func main() {
 	fmt.Println("Способы остановки горутин")
 	fmt.Println("=========================")
@@ -37,7 +21,7 @@ func main() {
 
 	for i := 0; i < workerCounter; i++ {
 		wg.Add(1)
-		go worker(job, result, done, &wg)
+		go worker1(job, result, done, &wg)
 	}
 
 	go func() {

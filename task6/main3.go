@@ -8,7 +8,7 @@ import (
 )
 
 func main3() {
-	fmt.Println("\nЧерез wait group и флаг:")
+	fmt.Println("\nЧерез select и закрытие канала:")
 
 	fmt.Println("Способ завершился.")
 	main4()

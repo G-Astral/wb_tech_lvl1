@@ -8,7 +8,7 @@ import (
 )
 
 func main4() {
-	fmt.Println("\nЧерез тайм афтер:")
+	fmt.Println("\nЧерез флаг + sync/atomic:")
 
 	fmt.Println("Способ завершился.")
 	main5()

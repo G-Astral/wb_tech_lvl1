@@ -8,7 +8,7 @@ import (
 )
 
 func main5() {
-	fmt.Println("\nЧерез ос сигнал:")
+	fmt.Println("\nЧерез return внутри for / range:")
 
 	fmt.Println("Способ завершился.")
 	main6()
