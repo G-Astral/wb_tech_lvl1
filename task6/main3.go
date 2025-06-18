@@ -29,5 +29,4 @@ func main3() {
 	wg.Wait()
 
 	fmt.Println("Способ завершился.")
-	main4()
 }
