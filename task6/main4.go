@@ -8,7 +8,7 @@ import (
 )
 
 func main4() {
-	fmt.Println("\nЧерез флаг + sync/atomic:")
+	fmt.Println("\nЧерез select и закрытие канала:")
 
 	fmt.Println("Способ завершился.")
 	main5()

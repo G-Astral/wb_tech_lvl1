@@ -33,3 +33,11 @@ func worker2(jobs chan int, result chan string, wg *sync.WaitGroup, ctx context.
 		}
 	}
 }
+
+func worker3(jobs chan int, wg *sync.WaitGroup) {
+	defer wg.Done()
+
+	for job := range jobs {
+		fmt.Println(addText(job))
+	}
+}

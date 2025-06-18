@@ -8,7 +8,7 @@ import (
 )
 
 func main5() {
-	fmt.Println("\nЧерез return внутри for / range:")
+	fmt.Println("\nЧерез флаг + sync/atomic:")
 
 	fmt.Println("Способ завершился.")
 	main6()
