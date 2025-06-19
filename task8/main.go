@@ -39,4 +39,6 @@ func main() {
 
 	fmt.Println("До:    ", number)
 	fmt.Println("После: ", changBit(number, i, flag))
+	fmt.Printf("До:     %064b\n", number)
+	fmt.Printf("После:  %064b\n", changBit(number, i, flag))
 }
